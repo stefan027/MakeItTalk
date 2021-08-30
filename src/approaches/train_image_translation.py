@@ -422,7 +422,7 @@ class Image_translation_block():
                 #frame = np.concatenate((ref_in[i], g_out[i], fls_in[i]), axis=1) * 255.0
                 frame = g_out[i]*255.0
                 if stream_video:
-                    cv2.im_show('Frame', frame)
+                    cv2.imshow('Frame', frame)
                     if cv2.waitKey(25) & 0xFF == ord('q'):
                         break
                 else:
